@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="studentResults" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="12f88834-bf84-48e1-be83-80a7e3cf8894">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="stId" class="java.lang.String"/>
+	<parameter name="stName" class="java.lang.String"/>
+	<parameter name="Exam ID" class="java.lang.String"/>
+	<parameter name="Exam Name" class="java.lang.String"/>
+	<parameter name="Module" class="java.lang.String"/>
+	<parameter name="Marks" class="java.lang.String"/>
+	<parameter name="passFail" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="254" y="19" width="306" height="60" uuid="ca9eaed3-7b94-46fd-8984-600c22c48c53"/>
+				<textElement>
+					<font size="30" isBold="true"/>
+				</textElement>
+				<text><![CDATA[STUDENT RESULTS]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="225" splitType="Stretch">
+			<staticText>
+				<reportElement x="74" y="46" width="159" height="27" uuid="8f6e672f-30e4-45f8-a8fa-cf27bbcf5f7f"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[STUDENT NAME    :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="74" y="19" width="159" height="27" uuid="2a60e81b-6e23-41e5-90a8-375a78211e43"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[STUDENT ID           :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="254" y="19" width="361" height="27" uuid="b7c6901f-922d-43d9-8a54-3f4c7d3acdd0"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{stId}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="254" y="46" width="361" height="27" uuid="3219356d-5895-41a5-91b0-832663b2eab9"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{stName}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="74" y="86" width="159" height="27" uuid="b903fa1d-200c-4a09-81ad-e535df79bcec"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[EXAM ID                 :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="254" y="93" width="233" height="20" uuid="e0856a2b-a496-42a7-8a45-9027b16d53ac"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{Exam ID}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="74" y="113" width="159" height="27" uuid="6b0d1c1e-1134-4ed2-afd1-61e560e11090"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[EXAM NAME           :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="254" y="120" width="233" height="20" uuid="ea16cc56-04b7-431c-9ccc-875bcba18d55"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{Exam Name}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="74" y="140" width="159" height="27" uuid="2643f173-3f4f-4895-92ff-f93a3fdeac13"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[MODULE                :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="74" y="167" width="159" height="27" uuid="bcfd0d5d-ccb3-4ae8-95a4-7c31318e091b"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[MARKS                   :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="74" y="194" width="159" height="27" uuid="e8f243ed-6de7-4ba2-a07b-187194c0d007"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[PassFail                   :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="254" y="147" width="233" height="20" uuid="ed2cc72e-4f37-4d7c-8c1e-1808718d2070"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{Module}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="254" y="174" width="233" height="20" uuid="7760b185-5602-4223-8965-5d83521747d5"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{Marks}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="254" y="201" width="233" height="20" uuid="3ea710e9-aedf-43e6-8687-8604b4bafb2e"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{passFail}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
